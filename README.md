@@ -1,2 +1,2 @@
 # Simple_Web-Page
-Special for TEST
+JQUERY with one Range library + PURE HTML with CSS
