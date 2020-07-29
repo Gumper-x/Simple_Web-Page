@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title -->
+    <title>Only-nice</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/open_sans_f/stylesheet.css" />
+    <!-- RANGE CSS -->
+    <link rel="stylesheet" href="js/range/rSlider.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Menu 900px -->
+      <section class="slide-menu">
+        <ul>
+          <li class="title account">ACCOUNT</li>
+          <ul class="auth-block">
+            <li><a href="/" class="auth loginin">Войти</a></li>
+            <li><a href="/" class="auth registr">Регистрация</a></li>
+            <li><a href="/" class="auth logout">Выйти</a></li>
+          </ul>
+          <li class="title menu">MENU</li>
+          <li><a href="/" class="active nav">Главная</a></li>
+          <li><a href="#" class="nav">Категории</a></li>
+          <li><a href="#" class="nav">Коллекции</a></li>
+          <li><a href="#" class="nav">О сайте</a></li>
+          <li class="title settings">SETTING</li>
+          <li><a href="#">Тема:</a></li>
+        </ul>
+      </section>
+      <div class="night-block"></div>
+      <div id="alert-mes" class="out">
+        <span></span>
+        <button id="close-alert"></button>
+      </div>
+      <!-- Header -->
+      <header>
+        <!-- Search -->
+        <section class="search-block out">
+          <form action="">
+            <input type="text" class="search-inp" placeholder="Поиск" />
+            <button class="search-but"></button>
+          </form>
+          <button class="cleaner-but"></button>
+        </section>
+        <!-- Buttons on 900px-->
+        <button class="menu-but here">
+          <span class="icon-menu"></span>
+          <span class="icon-menu"></span>
+          <span class="icon-menu"></span>
+        </button>
+        <!-- Main header -->
+        <a href="/"><h1>ONLY-NICE</h1></a>
+
+        <nav class="head-nav">
+          <ul>
+            <li><a href="/" class="active">Главная</a></li>
+            <li><a href="/" class="">Категории</a></li>
+            <li><a href="/" class="">Коллекции</a></li>
+            <li><a href="/" class="">О сайте</a></li>
+          </ul>
+        </nav>
+
+        <section class="interactive-block">
+          <button class="account-but" id="account-but-id"></button>
+          <span class="next"></span>
+          <button class="setting-but"></button>
+          <span class="next"></span>
+          <button class="search-activator"></button>
+        </section>
+      </header>
+      <main>
+        <section class="breadcrumb-block">
+          <div class="breadcrumb">
+            <h2><a href="/">Главная</a></h2>
+            <h2><a href="/">Категории</a></h2>
+            <h2><a href="/">Экшн</a> + <a href="/">Игровые персонажи</a></h2>
+          </div>
+          <hr class="hr-after-breadcrumb" />
+        </section>
+        <section class="filter-block">
+          <div class="filter-container general-width">
+            <div class="selecter">
+              <span class="selecter-span"></span>
+              <ul class="select-menu">
+                <li class="date-top selected">
+                  Дата добавления: сначала новые
+                </li>
+                <li class="date-low">Дата добавления: сначала старые</li>
+                <li class="top-views">Самые популярные</li>
+                <li class="comment">Наиболее комментируемые</li>
+              </ul>
+            </div>
+            <script>
+              let selected = document.querySelector(".selecter-span");
+              let litext = document.querySelector("li.selected").innerHTML;
+              selected.innerHTML = litext;
+            </script>
+            <div class="func-box">
+              <button class="more-filter">Больше фильтров +</button>
+              <button class="submit disbl">Применить</button>
+            </div>
+            <div id="more-filter-div">
+              <div class="range-block">
+                <h2 class="title-filter">
+                  Количество страниц: <span id="rangeText">1-100</span>
+                </h2>
+                <div class="range-box">
+                  <input type="text" id="slider" class="slider" />
+                </div>
+              </div>
+              <div class="category-selector">
+                <h2 class="title-filter">Категории</h2>
+                <div class="tab-box">
+                  <button class="tab-c active">Предпочтения</button>
+                  <button class="tab-c">Исключение</button>
+                </div>
+                <ul>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm unready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm unready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                  <li class="cat-elm ready">TEXT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="comics-block">
+          <div class="comics-box general-width">
+            <a href="pages/comics.html">
+              <span class="title-comics">Знойное лето</span>
+              <div class="container">
+                <img
+                  src="img/content_img/1574884783185317124.png"
+                  alt="ComicsLogo"
+                />
+                <div class="stats delay">
+                  <span class="views ico-eye" title="Просмотры">23 589</span>
+                  <span class="comments ico-com" title="Комментарии"
+                    >23 589</span
+                  >
+                  <span class="pubdate ico-date" title="Дата публикации"
+                    >21.12.2019</span
+                  >
+                </div>
+              </div>
+            </a>
+            <div class="footer-comic-box">
+              <div class="categories-list">
+                <ul>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="comics-box general-width">
+            <a href="pages/comics.html">
+              <span class="title-comics">Помощь флатерине</span>
+              <div class="container">
+                <img
+                  src="img/content_img/kf28.png"
+                  alt="ComicsLogo"
+                />
+                <div class="stats delay">
+                  <span class="views ico-eye" title="Просмотры">100 тыс.</span>
+                  <span class="comments ico-com" title="Комментарии"
+                    >200 тыс.</span
+                  >
+                  <span class="pubdate ico-date" title="Дата публикации"
+                    >21.12.2019</span
+                  >
+                </div>
+              </div>
+            </a>
+            <div class="footer-comic-box">
+              <div class="categories-list">
+                <ul>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                  <li><a href="#" class="cat-li-small">TEXT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="paginator-block">
+          <span class="page disable">1</span>
+          <a href="" class="page">2</a>
+          <a href="" class="page">3</a>
+          <a href="" class="page">4</a>
+          <a href="" class="page">5</a>
+        </section>
+      </main>
+      <footer>
+        <div class="foot-list">
+          README
+          <p class="foot-text">
+            Причитай меня
+            <b style="color: #e14a4a;">Lorem ipsum dolor...</b>
+          </p>
+        </div>
+        <div class="foot-list">
+          WHY ME?
+          <p class="foot-text">
+            Only-nice- Был создан для тех кто любит <b>удобные</b> и
+            <b>приятные</b> сайты!
+          </p>
+        </div>
+        <div class="foot-link"><a href="/">© ONLY-NICE 2020</a></div>
+      </footer>
+    </div>
+    <!-- JQUERY -->
+    <script src="js/jQuery3.4.1.min.js"></script>
+    <!-- RANGE -->
+    <script src="js/range/rSlider.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

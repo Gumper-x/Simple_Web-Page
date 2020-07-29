@@ -1,0 +1,32 @@
+<?php 
+	require '../includes/config.php';
+	include '../includes/functions.php';
+	$put = new Output();
+ ?>
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Title -->
+	<title><?php echo $config['title']; ?></title>
+	<!-- Fonts -->
+	<link rel="stylesheet" href="../css/open_sans_f/stylesheet.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<div class="alert">
+
+	</div>
+	<div class="wrapper">
+		<?php $put->put_header();?>
+		<main class="error">
+			<span>Error 404 <br> Ничего не найдено</span>
+		</main>
+		<?php $put->put_footer();?>
+	</div>
+<?php $put->put_remote_script() ?>
+</body>
+</html>
